@@ -7,14 +7,16 @@ $(document).ready(function(){
 		$(".nav-content").eq(index).addClass("active");
 	});
 
-	$(".shaixuan-tj span.crumb-select-item").bind('hover',function(event){
-		if(event.type=='mouseenter'){
+	$(".shaixuan-tj").on("mouseover mouseout",".crumb-select-item", function(event){
+		event.preventDefault();
+		if(event.type=='mouseover'){
 			$(this).addClass("crumb-select-itemon");
 		}else{
 			$(this).removeClass("crumb-select-itemon");
 		}
 	});
-	$(".shaixuan-tj span.crumb-select-item").bind('click', function(event){
+
+	$(".shaixuan-tj").on('click',".crumb-select-item",function(event){
 		event.preventDefault();
 		$(this).remove();
 		var TTR = $(this).find("em").text();
@@ -28,18 +30,35 @@ $(document).ready(function(){
 			}
 		})
 	});
+
+
 	$(".show-con a").click(function(event){
 		event.preventDefault();
-		THIP = $(this).parents("dl");
-		if($(this).hasClass("nzw12")){
+		if($(this).attr("data-value") == 1){
+			var open = $(this).attr("data-id");
+			$("[data-id="+open+"]").show();
+			$(this).addClass("font-red border-red");
+			$(this).attr("data-value",0);
+			$(this).parent().css("height","auto");
+		}else if($(this).attr("data-value") == 0){
+			var open = $(this).attr("data-id");
+			$("[data-id="+open+"]:eq(1)").hide();
+			$(this).removeClass("font-red border-red");
+			$(this).attr("data-value",1);
+			$(this).parent().css("height","30px");
 		}else{
-			$(this).addClass("nzw12");
-			var zhiclass = $(this).parents("dd").siblings("dt").find("a").text();
-			zhicon = $(this).text();
-			tianjaneir="<span class='crumb-select-item'><a href='/'><b>"+zhiclass+"</b><em>"+zhicon+"</em><i class='icon-remove'></i></a></span>"
-			$(".shaixuan-tj").children().last().after(tianjaneir);
-			THIP.css("display","none");
+			THIP = $(this).parents("dl");
+			if($(this).hasClass("nzw12")){
+			}else{
+				$(this).addClass("nzw12");
+				var zhiclass = $(this).parents("dd").siblings("dt").find("a").text();
+				zhicon = $(this).text();
+				tianjaneir="<span class='crumb-select-item'><a href='javascript:;'><b>"+zhiclass+"</b><em>"+zhicon+"</em><i class='fa fa-remove'></i></a></span>"
+				$(".shaixuan-tj").children().last().after(tianjaneir);
+				THIP.css("display","none");
+			}
 		}
+
 	});
 	$(".show-more").click(function(event){
 		event.preventDefault();
@@ -61,29 +80,33 @@ $(document).ready(function(){
 	});
 	$("#sxbtn").click(function(event){
 		event.preventDefault();
-		var xicon = $(this).find("span i");
-		xspan = $(this).find("span em");
+		var xicon = $("#sxbtn i");
+		xspan = $("#open");
 		if($(this).hasClass("zkon")){
 			xspan.text("收起筛选");
-			xicon.removeClass("icon-angle-down");
-			xicon.addClass("icon-angle-up");
+			xicon.removeClass("icon-arrow-down");
+			xicon.addClass("icon-arrow-up");
 			$(".sxcon").slideDown();
 			$(this).removeClass("zkon")
 		}else{
-			xspan.text("查看筛选");
-			xicon.removeClass("icon-angle-up");
-			xicon.addClass("icon-angle-down");
+			xspan.text("展开筛选");
+			xicon.removeClass("icon-arrow-up");
+			xicon.addClass("icon-arrow-down");
 			$(".sxcon").slideUp();
 			$(this).addClass("zkon")
 		}
 	})
 
-	$("#th-large").bind("click",function (e) {
+	$("#th-large").on("click",function (e) {
+		$("#list").parent().removeClass().addClass("font-grey");
+		$("#th-large").parent().removeClass().addClass("font-green-sharp");
 		$("#th-large-container").show();
 		$("#list-container").hide();
 	});
 
-	$("#list").bind	("click",function (e) {
+	$("#list").on("click",function (e) {
+		$("#th-large").parent().removeClass().addClass("font-grey");
+		$("#list").parent().removeClass().addClass("font-green-sharp");
 		$("#th-large-container").hide();
 		$("#list-container").show();
 	});

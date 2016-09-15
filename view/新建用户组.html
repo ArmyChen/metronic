@@ -451,15 +451,21 @@
                     </div>
 
                     <div class="nav-content-panel pLight border border-top-blue border-left-white border-right-white border-bottom-white">
-                        <span class="caption-subject font-blue bold uppercase">新建用户组</span>
-                        <div class="form-group form-md-line-input">
-                            <input type="text" class="form-control" id="form_control_1" placeholder="填写用户组名称">
-                            <span class="help-block">填写用户组名称</span>
-                        </div>
-                        <hr>
+                        <!--内容头部-->
+                        <div class="header">
+                            <span class="caption-subject font-blue bold uppercase">新建用户组</span>
+                            <div class="form-group form-md-line-input">
+                                <input type="text" class="form-control" id="form_control_1" placeholder="填写用户组名称">
+                                <span class="help-block">填写用户组名称</span>
+                            </div>
+                            <hr>
 
-                        <span class="caption-subject font-blue bold uppercase">用户组描述</span>
-                        <div class="row page-container">
+                            <span class="caption-subject font-blue bold uppercase">用户组描述</span>
+                        </div>
+                        <!--结束头部-->
+                        <div class="row container-fluid">
+
+                            <!--筛选标签-->
                             <div class="row">
                                 <div class="col-md-2">
                                     <p>筛选条件：</p>
@@ -480,48 +486,153 @@
 
 
                             </div>
+                            <!--结束-->
 
+                            <!--筛选 开始-->
                             <div class="row">
-                                <div id="page-search-store" class="mb10 border sxcon">
+                                <div id="page-search-store" class="mb10 border">
                                     <div class="search-by by-category relative">
                                         <dl class="relative clearfix">
-                                            <dt class="floatLeft"><a href="/">基本：</a></dt>
-                                            <dd class="floatLeft show-con" style="height: 30px;">
-                                                <a href="/" class="">全部</a>
-                                                <a href="/" class="">性别</a>
-                                                <a href="/" class="">年龄</a>
+                                            <dt class="floatLeft"><a href="javascript:;">基本：</a></dt>
+                                            <dd class="floatLeft show-con col-lg-10">
+                                                <a href="javascript:;" class="">全部</a>
+                                                <a href="javascript:;" data-id="1" data-value="1">性别</a>
+                                                <a href="javascript:;" class="">年龄</a>
+                                                <p data-id="1" style="display:none">
+                                                    <a href="javascript:;" class="">男</a>
+                                                    <a href="javascript:;" class="">女</a>
+                                                </p>
+
                                             </dd>
                                         </dl>
                                         <dl class="relative clearfix">
-                                            <dt class="floatLeft"><a href="/">品牌：</a></dt>
-                                            <dd class="floatLeft show-con" style="height: 30px;">
-                                                <a href="/" class="">进口牛奶</a>
-                                                <a href="/" class="">进口母婴用品</a>
-                                                <a href="/" class="">进口零食</a>
-                                                <a href="/" class="">进口冲调保健</a>
-                                                <a href="/" class="nzw12">进口个人护理</a>
-                                                <a href="/" class="">进口牛奶</a>
-                                                <a href="/" class="">进口母婴用品</a>
-                                                <a href="/" class="">进口零食</a>
-                                                <a href="/" class="">进口冲调保健</a>
-                                                <a href="/" class="">进口个人护理</a>
-                                                <a href="/" class="">进口零食</a>
-                                                <a href="/" class="">进口冲调保健</a>
-                                                <a href="/" class="">进口个人护理</a>
+                                            <dt class="floatLeft"><a href="javascript:;">地区：</a></dt>
+                                            <dd class="floatLeft show-con col-lg-10" style="height: 30px;">
+                                                <a href="javascript:;" class="">全部</a>
+                                                <a href="javascript:;" data-id="12"  data-value="1">上海</a>
+                                                <a href="javascript:;" class="">北京</a>
+                                                <a href="javascript:;" class="">深圳</a>
+                                                <a href="javascript:;" class="">重庆</a>
+                                                <a href="javascript:;" class="">天津</a>
+                                                <a href="javascript:;" class="">浙江</a>
+                                                <a href="javascript:;" class="">广东</a>
+                                                <a href="javascript:;" class="">新疆</a>
+                                                <a href="javascript:;" class="">福建</a>
+                                                <a href="javascript:;" class="">广西</a>
+                                                <a href="javascript:;" class="">海口</a>
+                                                <a href="javascript:;" class="">湖北</a>
+                                                <a href="javascript:;" class="">湖南</a>
+                                                <a href="javascript:;" class="">河南</a>
+                                                <a href="javascript:;" class="">河北</a>
+                                                <a href="javascript:;" class="">内蒙古</a>
+                                                <a href="javascript:;" class="">黑龙江</a>
+                                                <p data-id="12" style="display:none">
+                                                    <a href="javascript:;" class="">全部区域</a>
+                                                    <a href="javascript:;" class="">浦东</a>
+                                                    <a href="javascript:;" class="">徐汇</a>
+                                                    <a href="javascript:;" class="">长宁</a>
+                                                    <a href="javascript:;" class="">黄埔</a>
+                                                    <a href="javascript:;" class="">普陀</a>
+                                                    <a href="javascript:;" class="">浦东</a>
+                                                    <a href="javascript:;" class="">徐汇</a>
+                                                    <a href="javascript:;" class="">长宁</a>
+
+                                                </p>
                                             </dd>
-                                            <dd class="floatLeft show-more"><h3 class="pointer clearfix"><span>更多</span><i class="icon-angle-down"></i></h3></dd>
+                                            <dd class="floatLeft show-more"><h3 class="pointer clearfix"><span>+ 更多</span><i class="icon-angle-down"></i></h3></dd>
                                         </dl>
-                                        <dl class="relative clearfix" style="border-bottom:0">
-                                            <dt class="floatLeft"><a href="/">规格：</a></dt>
-                                            <dd class="floatLeft show-con">
-                                                <a href="/" class="">10-15吨</a>
-                                                <a href="/" class="">20-25吨</a>
+                                        <dl class="relative clearfix">
+                                            <dt class="floatLeft"><a href="javascript:;">门店：</a></dt>
+                                            <dd class="floatLeft show-con col-lg-10">
+                                                <a href="javascript:;" class="">全部</a>
+                                                <a href="javascript:;" data-id="13"  data-value="1">上海</a>
+                                                <a href="javascript:;" class="">北京</a>
+                                                <a href="javascript:;" class="">深圳</a>
+                                                <a href="javascript:;" class="">重庆</a>
+                                                <a href="javascript:;" class="nzw12">天津</a>
+                                                <a href="javascript:;" class="">浙江</a>
+                                                <a href="javascript:;" class="">广东</a>
+                                                <a href="javascript:;" class="">新疆</a>
+                                                <a href="javascript:;" class="">福建</a>
+                                                <a href="javascript:;" class="">广西</a>
+                                                <a href="javascript:;" class="">海口</a>
+                                                <a href="javascript:;" class="">湖北</a>
+                                                <a href="javascript:;" class="">湖南</a>
+                                                <a href="javascript:;" class="">河南</a>
+                                                <a href="javascript:;" class="">河北</a>
+                                                <a href="javascript:;" class="">内蒙古</a>
+                                                <a href="javascript:;" class="">黑龙江</a>
+                                                <p data-id="13" style="display:none">
+                                                    <a href="javascript:;" class="">全部区域</a>
+                                                    <a href="javascript:;" class="">浦东</a>
+                                                    <a href="javascript:;" class="">徐汇</a>
+                                                    <a href="javascript:;" class="">长宁</a>
+                                                    <a href="javascript:;" class="">黄埔</a>
+                                                    <a href="javascript:;" class="">普陀</a>
+                                                    <a href="javascript:;" class="">浦东</a>
+                                                    <a href="javascript:;" class="">徐汇</a>
+                                                    <a href="javascript:;" class="">长宁</a>
+
+                                                </p>
+                                            </dd>
+                                            <dd class="floatLeft show-more"><h3 class="pointer clearfix"><span>+ 更多</span><i class="icon-angle-down"></i></h3></dd>
+                                        </dl>
+                                        <dl class="relative clearfix">
+                                            <dt class="floatLeft"><a href="javascript:;">互动：</a></dt>
+                                            <dd class="floatLeft show-con col-lg-10">
+                                                <a href="javascript:;" class="">24小时内联系过</a>
+                                                <a href="javascript:;" >48小时内联系过</a>
                                             </dd>
                                         </dl>
+                                        <dl class="relative clearfix">
+                                            <dt class="floatLeft"><a href="javascript:;">活动：</a></dt>
+                                            <dd class="floatLeft show-con col-lg-10">
+                                                <a href="javascript:;" class="">三天内</a>
+                                                <a href="javascript:;" >一周内</a>
+                                                <a href="javascript:;" >一月内</a>
+                                            </dd>
+                                        </dl>
+                                        <div class="sxcon zkon" style="display: none">
+                                            <dl class="relative clearfix">
+                                                <dt class="floatLeft"><a href="javascript:;">常用标签：</a></dt>
+                                                <dd class="floatLeft show-con col-lg-10">
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+
+                                                </dd>
+                                            </dl>
+                                            <dl class="relative clearfix">
+                                                <dt class="floatLeft"><a href="javascript:;">常用标签：</a></dt>
+                                                <dd class="floatLeft show-con col-lg-10">
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+                                                    <a href="javascript:;" class="">标签A</a>
+
+                                                </dd>
+                                            </dl>
+
+                                        </div>
+
                                     </div>
+                                    <dl class="relative clearfix text-center">
+                                        <span class="btn red zkon" id="sxbtn"><i class="icon-arrow-down"></i>&nbsp;<span id="open">展开筛选</span></span>
+                                    </dl>
                                 </div>
-                                <p id="sxbtn" class="text-center"><span>收起筛选<i class="icon-angle-up"></i></span></p>
+
                             </div>
+                            <!--筛选 结束-->
+
                             <div class="row container">
                                 <div class="col-md-4">
                                     <div class="checkbox-list padding-tb-20">
@@ -532,21 +643,24 @@
 
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row container">
 
-                                <div class="col-md-7 text-right">
+                                <div class="col-md-11 text-right">
                                     <div class="text-right">
                                         <a href="javascript:;" class=" font-green-sharp"><span class="fa fa-th-large font-lg" id="th-large"></span></a>
-                                        <a href="javascript:;" class=" font-green-sharp"><span class="fa fa-list font-lg" id="list"></span></a>
+                                        <a href="javascript:;" class=" font-grey"><span class="fa fa-list font-lg" id="list"></span></a>
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="mt-element-card mt-element-overlay" id="th-large-container" style="display: none">
+                            <!--格子形式-->
+                            <div class="mt-element-card mt-element-overlay" id="th-large-container" >
                                 <div class="row center-block">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="col-md-3 floatLeft ">
                                         <div class="tiles">
-                                            <div class="tile double  bg-blue-madison">
+                                            <div class="tile third  bg-blue-madison">
                                                 <div class="tile-body">
                                                     <img src="../img/team1.jpg" alt="" width="80">
                                                     <span>小米酱&nbsp;</span>
@@ -554,16 +668,17 @@
                                                     <p>中国 上海 普陀</p>
                                                 </div>
                                                 <div class="tile-object">
-                                                    <div class="name"> 生日:2016-09-14 </div>
+                                                    <div class="birthday"> 生日:2016-09-14 </div>
+                                                    <br>
 
-                                                    <div class="number"> 电话：18080808080</div>
+                                                    <div class="phone"> 电话：18080808080</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="col-md-3 floatLeft ">
                                         <div class="tiles">
-                                            <div class="tile double bg-blue-madison">
+                                            <div class="tile third  bg-blue-madison">
                                                 <div class="tile-body">
                                                     <img src="../img/team1.jpg" alt="" width="80">
                                                     <span>小米酱&nbsp;</span>
@@ -571,17 +686,163 @@
                                                     <p>中国 上海 普陀</p>
                                                 </div>
                                                 <div class="tile-object">
-                                                    <div class="name"> 生日:2016-09-14 </div>
+                                                    <div class="birthday"> 生日:2016-09-14 </div>
+                                                    <br>
 
-                                                    <div class="number"> 电话：18080808080</div>
+                                                    <div class="phone"> 电话：18080808080</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-3 floatLeft ">
+                                        <div class="tiles">
+                                            <div class="tile third  bg-blue-madison">
+                                                <div class="tile-body">
+                                                    <img src="../img/team1.jpg" alt="" width="80">
+                                                    <span>小米酱&nbsp;</span>
+                                                    <span><i class="fa fa-venus"></i></span>
+                                                    <p>中国 上海 普陀</p>
+                                                </div>
+                                                <div class="tile-object">
+                                                    <div class="birthday"> 生日:2016-09-14 </div>
+                                                    <br>
+
+                                                    <div class="phone"> 电话：18080808080</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 floatLeft ">
+                                        <div class="tiles">
+                                            <div class="tile third  bg-blue-madison">
+                                                <div class="tile-body">
+                                                    <img src="../img/team1.jpg" alt="" width="80">
+                                                    <span>小米酱&nbsp;</span>
+                                                    <span><i class="fa fa-venus"></i></span>
+                                                    <p>中国 上海 普陀</p>
+                                                </div>
+                                                <div class="tile-object">
+                                                    <div class="birthday"> 生日:2016-09-14 </div>
+                                                    <br>
+
+                                                    <div class="phone"> 电话：18080808080</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 floatLeft ">
+                                        <div class="tiles">
+                                            <div class="tile third  bg-blue-madison">
+                                                <div class="tile-body">
+                                                    <img src="../img/team1.jpg" alt="" width="80">
+                                                    <span>小米酱&nbsp;</span>
+                                                    <span><i class="fa fa-venus"></i></span>
+                                                    <p>中国 上海 普陀</p>
+                                                </div>
+                                                <div class="tile-object">
+                                                    <div class="birthday"> 生日:2016-09-14 </div>
+                                                    <br>
+
+                                                    <div class="phone"> 电话：18080808080</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 floatLeft ">
+                                        <div class="tiles">
+                                            <div class="tile third  bg-blue-madison">
+                                                <div class="tile-body">
+                                                    <img src="../img/team1.jpg" alt="" width="80">
+                                                    <span>小米酱&nbsp;</span>
+                                                    <span><i class="fa fa-venus"></i></span>
+                                                    <p>中国 上海 普陀</p>
+                                                </div>
+                                                <div class="tile-object">
+                                                    <div class="birthday"> 生日:2016-09-14 </div>
+                                                    <br>
+
+                                                    <div class="phone"> 电话：18080808080</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 floatLeft ">
+                                        <div class="tiles">
+                                            <div class="tile third  bg-blue-madison">
+                                                <div class="tile-body">
+                                                    <img src="../img/team1.jpg" alt="" width="80">
+                                                    <span>小米酱&nbsp;</span>
+                                                    <span><i class="fa fa-venus"></i></span>
+                                                    <p>中国 上海 普陀</p>
+                                                </div>
+                                                <div class="tile-object">
+                                                    <div class="birthday"> 生日:2016-09-14 </div>
+                                                    <br>
+
+                                                    <div class="phone"> 电话：18080808080</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 floatLeft ">
+                                        <div class="tiles">
+                                            <div class="tile third  bg-blue-madison">
+                                                <div class="tile-body">
+                                                    <img src="../img/team1.jpg" alt="" width="80">
+                                                    <span>小米酱&nbsp;</span>
+                                                    <span><i class="fa fa-venus"></i></span>
+                                                    <p>中国 上海 普陀</p>
+                                                </div>
+                                                <div class="tile-object">
+                                                    <div class="birthday"> 生日:2016-09-14 </div>
+                                                    <br>
+
+                                                    <div class="phone"> 电话：18080808080</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 floatLeft ">
+                                        <div class="tiles">
+                                            <div class="tile third  bg-blue-madison">
+                                                <div class="tile-body">
+                                                    <img src="../img/team1.jpg" alt="" width="80">
+                                                    <span>小米酱&nbsp;</span>
+                                                    <span><i class="fa fa-venus"></i></span>
+                                                    <p>中国 上海 普陀</p>
+                                                </div>
+                                                <div class="tile-object">
+                                                    <div class="birthday"> 生日:2016-09-14 </div>
+                                                    <br>
+
+                                                    <div class="phone"> 电话：18080808080</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 floatLeft ">
+                                        <div class="tiles">
+                                            <div class="tile third  bg-blue-madison">
+                                                <div class="tile-body">
+                                                    <img src="../img/team1.jpg" alt="" width="80">
+                                                    <span>小米酱&nbsp;</span>
+                                                    <span><i class="fa fa-venus"></i></span>
+                                                    <p>中国 上海 普陀</p>
+                                                </div>
+                                                <div class="tile-object">
+                                                    <div class="birthday"> 生日:2016-09-14 </div>
+                                                    <br>
+
+                                                    <div class="phone"> 电话：18080808080</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-
-                            <div class="portlet light" id="list-container">
+                            <!--图表形式-->
+                            <div class="portlet light" id="list-container" style="display: none">
 
                                 <div class="portlet-title">
                                     <div class="row">
@@ -633,9 +894,7 @@
                                 </div>
 
                             </div>
-
-
-
+                            <!--底部分页-->
                             <div class="row page-container">
                                 <div class="col-md-6 text-left">
                                    <p>共 4443 人</p>
@@ -675,6 +934,7 @@
                             </div>
                     </div>
                 </div>
+                    <!--外部按钮-->
                 <div class="row container">
                     <p>
                         <input type="checkbox" name="checkbox" id="btn-checkall"> <label for="btn-checkall">全部</label>
