@@ -561,16 +561,210 @@
                     	</div>
                     	<div class="nav-content">
                             <div class="sound-nav-panel">
-                                <div class="row">
-                                    <div class="no-data">暂无用户</div>
+                                 <div class="row">
+                                <div class="col-md-9">
+                                    <div class="portlet light ">
+                                        <div class="portlet-title">
+                                            <div class="row">
+                                                <table style="width:98%;">
+                                                    <td align="center" width="4%"><input type="checkbox" id="btn-checkall"></td>
+                                                    <td align="left"><button class="btn green-sharp btn-sm" type="button"><i class="fa fa-star font-yellow-crusta"></i> 星标用户</button>&nbsp;<button class="btn green-sharp btn-sm" type="button"><i class="fa fa-lock"></i> 加入黑名单</button></td>
+                                                    <td width="5%"><button class="btn green-sharp btn-sm" type="button"><i class="fa fa-plus"></i> 新用户</button></td>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-title" style="height:70px;">
+                                            <div class="row">
+                                                <table style="width:98%;">
+                                                    <td align="center" width="4%"><input type="checkbox" name="userid"></td>
+                                                    <td align="left" width="6%"><img src="../img/0.jpg" width="50" height="50"></td>
+                                                    <td><h5>开水君&nbsp;&nbsp;<i class="fa fa-star font-yellow-crusta"></i></h5>
+                                                        <h5><button class="btn btn-circle btn-success btn-sm" type="button">上海</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-circle btn-success btn-sm" type="button">新招</button></h5></td>
+                                                    <td width="5%"><button class="btn green-sharp btn-sm" type="button"><i class="fa fa-pencil"></i> 备注</button></td>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-title" style="height:70px;">
+                                            <div class="row">
+                                                <table style="width:98%;">
+                                                    <td align="center" width="4%"><input type="checkbox" name="userid"></td>
+                                                    <td align="left" width="6%"><img src="../img/0.jpg" width="50" height="50"></td>
+                                                    <td><h5>开水君&nbsp;&nbsp;<i class="fa fa-star font-yellow-crusta"></i></h5>
+                                                        <h5><button class="btn btn-circle btn-success btn-sm" type="button">上海</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-circle btn-success btn-sm" type="button">新招</button></h5></td>
+                                                    <td width="5%"><button class="btn green-sharp btn-sm" type="button"><i class="fa fa-pencil"></i> 备注</button></td>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-title" style="height:70px;">
+                                            <div class="row">
+                                                <table style="width:98%;">
+                                                    <td align="center" width="4%"><input type="checkbox" name="userid"></td>
+                                                    <td align="left" width="6%"><img src="../img/0.jpg" width="50" height="50"></td>
+                                                    <td><h5>开水君&nbsp;&nbsp;<i class="fa fa-star-o"></i></h5>
+                                                        <h5><button class="btn btn-circle btn-success btn-sm" type="button">上海</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-circle btn-success btn-sm" type="button">新招</button></h5></td>
+                                                    <td width="5%"><button class="btn green-sharp btn-sm" type="button"><i class="fa fa-pencil"></i> 备注</button></td>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="col-md-3">
+                                    <div class="portlet light ">
+                                        <div class="portlet-title">
+                                            <div class="caption">
+                                                <i class="icon-users font-green-sharp"></i>
+                                                <span class="caption-subject font-green-sharp bold uppercase">所有用户</span>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-body" style="padding-left: 5px;">
+                                            <div class="input-group">
+                                                <div class="icheck-list">
+                                                    <label>
+                                                        <input type="checkbox" class="icheck"> 全部 </label>
+                                                    <label>
+                                                        <input type="checkbox" checked class="icheck"> 男性用户 </label>
+                                                    <label>
+                                                        <input type="checkbox" class="icheck"> 女性用户 </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-title"></div>
+                                        <div class="portlet-title">
+                                            <div class="caption">
+                                                <i class="fa fa-map-marker font-green-sharp"></i>
+                                                <span class="caption-subject font-green-sharp bold uppercase">所在地区</span>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-body">
+                                            <div id="tree_1" class="tree-demo"> </div>
+                                        </div>
+                                        <div class="portlet-title"></div>
+                                        <div class="portlet-title">
+                                            <div class="caption">
+                                                <i class="fa fa-home font-green-sharp"></i>
+                                                <span class="caption-subject font-green-sharp bold uppercase">所在门店</span>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-body">
+                                            <div id="tree_2" class="tree-demo"> </div>
+                                        </div>
+                                        <div class="portlet-title"></div>
+                                        <div class="portlet-title">
+                                            <div class="caption">
+                                                <i class="icon-tag font-green-sharp"></i>
+                                                <span class="caption-subject font-green-sharp bold uppercase">所在标签</span>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-body">
+                                            <div id="tree_3" class="tree-demo"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                     	</div>
                     	<div class="nav-content">
                     		<div class="sound-nav-panel">
-                    			<div class="row">
-                    				<div class="no-data">暂无用户</div>
-                    			</div>
+                    			 <div class="row">
+                                <div class="col-md-9">
+                                    <div class="portlet light ">
+                                        <div class="portlet-title">
+                                            <div class="row">
+                                                <table style="width:98%;">
+                                                    <td align="center" width="4%"><input type="checkbox" id="btn-checkall"></td>
+                                                    <td align="left"><button class="btn green-sharp btn-sm" type="button"><i class="fa fa-star font-yellow-crusta"></i> 星标用户</button>&nbsp;<button class="btn green-sharp btn-sm" type="button"><i class="fa fa-lock"></i> 加入黑名单</button></td>
+                                                    <td width="5%"><button class="btn green-sharp btn-sm" type="button"><i class="fa fa-plus"></i> 新用户</button></td>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-title" style="height:70px;">
+                                            <div class="row">
+                                                <table style="width:98%;">
+                                                    <td align="center" width="4%"><input type="checkbox" name="userid"></td>
+                                                    <td align="left" width="6%"><img src="../img/0.jpg" width="50" height="50"></td>
+                                                    <td><h5>开水君&nbsp;&nbsp;<i class="fa fa-star font-yellow-crusta"></i></h5>
+                                                        <h5><button class="btn btn-circle btn-success btn-sm" type="button">上海</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-circle btn-success btn-sm" type="button">新招</button></h5></td>
+                                                    <td width="5%"><button class="btn green-sharp btn-sm" type="button"><i class="fa fa-pencil"></i> 备注</button></td>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-title" style="height:70px;">
+                                            <div class="row">
+                                                <table style="width:98%;">
+                                                    <td align="center" width="4%"><input type="checkbox" name="userid"></td>
+                                                    <td align="left" width="6%"><img src="../img/0.jpg" width="50" height="50"></td>
+                                                    <td><h5>开水君&nbsp;&nbsp;<i class="fa fa-star font-yellow-crusta"></i></h5>
+                                                        <h5><button class="btn btn-circle btn-success btn-sm" type="button">上海</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-circle btn-success btn-sm" type="button">新招</button></h5></td>
+                                                    <td width="5%"><button class="btn green-sharp btn-sm" type="button"><i class="fa fa-pencil"></i> 备注</button></td>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-title" style="height:70px;">
+                                            <div class="row">
+                                                <table style="width:98%;">
+                                                    <td align="center" width="4%"><input type="checkbox" name="userid"></td>
+                                                    <td align="left" width="6%"><img src="../img/0.jpg" width="50" height="50"></td>
+                                                    <td><h5>开水君&nbsp;&nbsp;<i class="fa fa-star-o"></i></h5>
+                                                        <h5><button class="btn btn-circle btn-success btn-sm" type="button">上海</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-circle btn-success btn-sm" type="button">新招</button></h5></td>
+                                                    <td width="5%"><button class="btn green-sharp btn-sm" type="button"><i class="fa fa-pencil"></i> 备注</button></td>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="portlet light ">
+                                        <div class="portlet-title">
+                                            <div class="caption">
+                                                <i class="icon-users font-green-sharp"></i>
+                                                <span class="caption-subject font-green-sharp bold uppercase">所有用户</span>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-body" style="padding-left: 5px;">
+                                            <div class="input-group">
+                                                <div class="icheck-list">
+                                                    <label>
+                                                        <input type="checkbox" class="icheck"> 全部 </label>
+                                                    <label>
+                                                        <input type="checkbox" checked class="icheck"> 男性用户 </label>
+                                                    <label>
+                                                        <input type="checkbox" class="icheck"> 女性用户 </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-title"></div>
+                                        <div class="portlet-title">
+                                            <div class="caption">
+                                                <i class="fa fa-map-marker font-green-sharp"></i>
+                                                <span class="caption-subject font-green-sharp bold uppercase">所在地区</span>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-body">
+                                            <div id="tree_1" class="tree-demo"> </div>
+                                        </div>
+                                        <div class="portlet-title"></div>
+                                        <div class="portlet-title">
+                                            <div class="caption">
+                                                <i class="fa fa-home font-green-sharp"></i>
+                                                <span class="caption-subject font-green-sharp bold uppercase">所在门店</span>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-body">
+                                            <div id="tree_2" class="tree-demo"> </div>
+                                        </div>
+                                        <div class="portlet-title"></div>
+                                        <div class="portlet-title">
+                                            <div class="caption">
+                                                <i class="icon-tag font-green-sharp"></i>
+                                                <span class="caption-subject font-green-sharp bold uppercase">所在标签</span>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-body">
+                                            <div id="tree_3" class="tree-demo"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     		</div>
                     	</div>
                     	<div class="nav-content">
@@ -580,7 +774,7 @@
                                     <div class="portlet-title">
                                         <div class="caption font-red-sunglo col-lg-4">
                                             <div class="input-group input-group-sm">
-                                                <input type="text" class="input-sm form-control"/>
+                                                <input type="text" class="input-sm form-control" placeholder="快速查询"/>
                                                     <span class="input-group-btn">
                                                         <button class="btn green" type="button">查询</button>
                                                     </span>
@@ -601,18 +795,18 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6">
                                         <!-- BEGIN PORTLET-->
-                                        <div class="portlet box green-sharp ">
+                                        <div class="portlet box grey-steel">
                                             <div class="portlet-title">
                                                 <div class="caption">
                                                     <!--<i class="fa fa-user"></i>-->
-                                                    <span class="caption-subject font-white">北京华贸男&nbsp;
+                                                    <span class="caption-subject font-dark">北京华贸男&nbsp;
                                                         <i class="fa fa-edit"></i>
                                                     </span>
                                                 </div>
                                                 <div class="actions">
                                                     <div class="btn-group">
                                                         <div class="btn-group btn-group-solid">
-                                                            <button type="button" class="btn white">
+                                                            <button type="button" class="btn yellow-casablanca">
                                                                 <i class="fa fa-send"></i> 推送</button>
                                                         </div>
                                                     </div>
@@ -661,20 +855,20 @@
                                         </div>
                                         <!-- END PORTLET-->
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                  <div class="col-md-6 col-sm-6">
                                         <!-- BEGIN PORTLET-->
-                                        <div class="portlet box green-sharp ">
+                                        <div class="portlet box grey-steel">
                                             <div class="portlet-title">
                                                 <div class="caption">
                                                     <!--<i class="fa fa-user"></i>-->
-                                                    <span class="caption-subject font-white">北京华贸男&nbsp;
+                                                    <span class="caption-subject font-dark">北京华贸男&nbsp;
                                                         <i class="fa fa-edit"></i>
                                                     </span>
                                                 </div>
                                                 <div class="actions">
                                                     <div class="btn-group">
                                                         <div class="btn-group btn-group-solid">
-                                                            <button type="button" class="btn white">
+                                                            <button type="button" class="btn yellow-casablanca">
                                                                 <i class="fa fa-send"></i> 推送</button>
                                                         </div>
                                                     </div>
@@ -723,20 +917,20 @@
                                         </div>
                                         <!-- END PORTLET-->
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                  <div class="col-md-6 col-sm-6">
                                         <!-- BEGIN PORTLET-->
-                                        <div class="portlet box green-sharp ">
+                                        <div class="portlet box grey-steel">
                                             <div class="portlet-title">
                                                 <div class="caption">
                                                     <!--<i class="fa fa-user"></i>-->
-                                                    <span class="caption-subject font-white">北京华贸男&nbsp;
+                                                    <span class="caption-subject font-dark">北京华贸男&nbsp;
                                                         <i class="fa fa-edit"></i>
                                                     </span>
                                                 </div>
                                                 <div class="actions">
                                                     <div class="btn-group">
                                                         <div class="btn-group btn-group-solid">
-                                                            <button type="button" class="btn white">
+                                                            <button type="button" class="btn yellow-casablanca">
                                                                 <i class="fa fa-send"></i> 推送</button>
                                                         </div>
                                                     </div>
@@ -785,20 +979,20 @@
                                         </div>
                                         <!-- END PORTLET-->
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                  <div class="col-md-6 col-sm-6">
                                         <!-- BEGIN PORTLET-->
-                                        <div class="portlet box green-sharp ">
+                                        <div class="portlet box grey-steel">
                                             <div class="portlet-title">
                                                 <div class="caption">
                                                     <!--<i class="fa fa-user"></i>-->
-                                                    <span class="caption-subject font-white">北京华贸男&nbsp;
+                                                    <span class="caption-subject font-dark">北京华贸男&nbsp;
                                                         <i class="fa fa-edit"></i>
                                                     </span>
                                                 </div>
                                                 <div class="actions">
                                                     <div class="btn-group">
                                                         <div class="btn-group btn-group-solid">
-                                                            <button type="button" class="btn white">
+                                                            <button type="button" class="btn yellow-casablanca">
                                                                 <i class="fa fa-send"></i> 推送</button>
                                                         </div>
                                                     </div>
@@ -847,20 +1041,20 @@
                                         </div>
                                         <!-- END PORTLET-->
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                  <div class="col-md-6 col-sm-6">
                                         <!-- BEGIN PORTLET-->
-                                        <div class="portlet box green-sharp ">
+                                        <div class="portlet box grey-steel">
                                             <div class="portlet-title">
                                                 <div class="caption">
                                                     <!--<i class="fa fa-user"></i>-->
-                                                    <span class="caption-subject font-white">北京华贸男&nbsp;
+                                                    <span class="caption-subject font-dark">北京华贸男&nbsp;
                                                         <i class="fa fa-edit"></i>
                                                     </span>
                                                 </div>
                                                 <div class="actions">
                                                     <div class="btn-group">
                                                         <div class="btn-group btn-group-solid">
-                                                            <button type="button" class="btn white">
+                                                            <button type="button" class="btn yellow-casablanca">
                                                                 <i class="fa fa-send"></i> 推送</button>
                                                         </div>
                                                     </div>
@@ -909,20 +1103,20 @@
                                         </div>
                                         <!-- END PORTLET-->
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                  <div class="col-md-6 col-sm-6">
                                         <!-- BEGIN PORTLET-->
-                                        <div class="portlet box green-sharp ">
+                                        <div class="portlet box grey-steel">
                                             <div class="portlet-title">
                                                 <div class="caption">
                                                     <!--<i class="fa fa-user"></i>-->
-                                                    <span class="caption-subject font-white">北京华贸男&nbsp;
+                                                    <span class="caption-subject font-dark">北京华贸男&nbsp;
                                                         <i class="fa fa-edit"></i>
                                                     </span>
                                                 </div>
                                                 <div class="actions">
                                                     <div class="btn-group">
                                                         <div class="btn-group btn-group-solid">
-                                                            <button type="button" class="btn white">
+                                                            <button type="button" class="btn yellow-casablanca">
                                                                 <i class="fa fa-send"></i> 推送</button>
                                                         </div>
                                                     </div>
@@ -971,20 +1165,20 @@
                                         </div>
                                         <!-- END PORTLET-->
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                  <div class="col-md-6 col-sm-6">
                                         <!-- BEGIN PORTLET-->
-                                        <div class="portlet box green-sharp ">
+                                        <div class="portlet box grey-steel">
                                             <div class="portlet-title">
                                                 <div class="caption">
                                                     <!--<i class="fa fa-user"></i>-->
-                                                    <span class="caption-subject font-white">北京华贸男&nbsp;
+                                                    <span class="caption-subject font-dark">北京华贸男&nbsp;
                                                         <i class="fa fa-edit"></i>
                                                     </span>
                                                 </div>
                                                 <div class="actions">
                                                     <div class="btn-group">
                                                         <div class="btn-group btn-group-solid">
-                                                            <button type="button" class="btn white">
+                                                            <button type="button" class="btn yellow-casablanca">
                                                                 <i class="fa fa-send"></i> 推送</button>
                                                         </div>
                                                     </div>
@@ -1033,20 +1227,20 @@
                                         </div>
                                         <!-- END PORTLET-->
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                  <div class="col-md-6 col-sm-6">
                                         <!-- BEGIN PORTLET-->
-                                        <div class="portlet box green-sharp ">
+                                        <div class="portlet box grey-steel">
                                             <div class="portlet-title">
                                                 <div class="caption">
                                                     <!--<i class="fa fa-user"></i>-->
-                                                    <span class="caption-subject font-white">北京华贸男&nbsp;
+                                                    <span class="caption-subject font-dark">北京华贸男&nbsp;
                                                         <i class="fa fa-edit"></i>
                                                     </span>
                                                 </div>
                                                 <div class="actions">
                                                     <div class="btn-group">
                                                         <div class="btn-group btn-group-solid">
-                                                            <button type="button" class="btn white">
+                                                            <button type="button" class="btn yellow-casablanca">
                                                                 <i class="fa fa-send"></i> 推送</button>
                                                         </div>
                                                     </div>
@@ -1095,20 +1289,20 @@
                                         </div>
                                         <!-- END PORTLET-->
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                  <div class="col-md-6 col-sm-6">
                                         <!-- BEGIN PORTLET-->
-                                        <div class="portlet box green-sharp ">
+                                        <div class="portlet box grey-steel">
                                             <div class="portlet-title">
                                                 <div class="caption">
                                                     <!--<i class="fa fa-user"></i>-->
-                                                    <span class="caption-subject font-white">北京华贸男&nbsp;
+                                                    <span class="caption-subject font-dark">北京华贸男&nbsp;
                                                         <i class="fa fa-edit"></i>
                                                     </span>
                                                 </div>
                                                 <div class="actions">
                                                     <div class="btn-group">
                                                         <div class="btn-group btn-group-solid">
-                                                            <button type="button" class="btn white">
+                                                            <button type="button" class="btn yellow-casablanca">
                                                                 <i class="fa fa-send"></i> 推送</button>
                                                         </div>
                                                     </div>
@@ -1157,68 +1351,7 @@
                                         </div>
                                         <!-- END PORTLET-->
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <!-- BEGIN PORTLET-->
-                                        <div class="portlet box green-sharp ">
-                                            <div class="portlet-title">
-                                                <div class="caption">
-                                                    <!--<i class="fa fa-user"></i>-->
-                                                    <span class="caption-subject font-white">北京华贸男&nbsp;
-                                                        <i class="fa fa-edit"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="actions">
-                                                    <div class="btn-group">
-                                                        <div class="btn-group btn-group-solid">
-                                                            <button type="button" class="btn white">
-                                                                <i class="fa fa-send"></i> 推送</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="portlet-body">
-                                                <!--第一组-->
-                                                <ul class="pager">
-                                                    <li class="previous">
-                                                        <span class="default">
-                                                            组标签
-                                                          </span>
-                                                    </li>
-                                                    <li class="next">
-                                                        <a href="javascript:;" class="btn red"> 查看统计
-                                                            <i class="fa fa-angle-right"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                                <p>
-                                                    <button type="button" class="btn btn-circle green-sharp">上海</button>
-                                                    <button type="button" class="btn btn-circle green-sharp">满赠</button>
-                                                    <button type="button" class="btn btn-circle green-sharp">爱分享</button>
-                                                </p>
-                                                <hr/>
-                                                <!--第二组-->
-                                                <ul class="pager">
-                                                    <li class="previous">
-                                                        <span class="default">组人数</span>
-                                                        <span class="red">111</span>
-                                                    </li>
-
-                                                </ul>
-                                                <p>
-                                                    <button type="button" class="btn red">查看成员</button>
-                                                    <button type="button" class="btn red">筛选规则</button>
-                                                </p>
-                                                <hr>
-                                                <!--第三组-->
-                                                <div class="row">
-                                                    <span class="col-md-6">修改时间：2016-5-21</span>
-                                                    <span class="col-md-6 text-right">创建时间：2016-5-21</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END PORTLET-->
-                                    </div>
+                                  
                                 </div>
                     		</div>
                     	</div>
